@@ -1,0 +1,305 @@
+:root{
+    --cor1:#fff;
+    --cor2:#030102;
+    --cor3:#e196f4;
+    --cor4: #0e0d0d;
+    --font:"Dancing Script", serif;
+    --font2:"Playfair Display", serif;
+    --font3:"Montserrat", serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--cor2);
+    color: #fff;
+}
+header{
+    display: flex;
+    justify-content: center;
+    background-color: var(--cor2);
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+header #link_principal{
+    font-family: var(--font);
+    text-decoration: none;
+    color: var(--cor1);
+    font-size: 30px;
+    margin-right: 10%;
+    padding: 10px;
+}
+#letraRosa{
+    color: var(--cor3);
+}
+header nav{
+    display: flex;
+    align-items: center;
+    font-family: var(--font3);
+}
+header .redes_contato{
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+}
+header .redes_contato a{
+    color: var(--cor1);
+    font-size: 20px;
+    margin-left: 20px;
+}
+header nav a{
+    text-decoration: none;
+    color: var(--cor1);
+    margin-right: 45px;
+}
+header nav a:hover{
+    transition: 0.3s;
+    color: var(--cor3);
+}
+header .redes_contato a:hover{
+    transition: 0.3s;
+    color: var(--cor3);
+}
+.apresentacao{
+    display: flex;
+    background-image: url(https://cdn.pixabay.com/photo/2016/11/29/02/25/close-up-1866841_960_720.jpg);
+    background-position: 80%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 800px;
+    width: 100%;
+}
+.apresentacao_texto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+#texto_apresentacao{
+    border-left: 5px solid var(--cor3);
+    width: 70%;
+    font-size: 30px;
+    font-family: var(--font3);
+}
+#texto_apresentacao h2{
+    margin-left: 30px;
+    text-shadow: 1px 1px 1px var(--cor2);
+}
+#agendamento,#servico{
+    font-size: 20px;
+    padding: 20px;
+    text-decoration: none;
+    color: var(--cor2);
+    background-color: var(--cor3);
+}
+#agendamento{
+    margin-left: 30px;
+}
+#servico{
+    margin-top: 100px;
+    padding: 10px;
+    font-size: 15px;
+    font-family: var(--font3);
+    border: 1px solid var(--cor3);
+}
+#agendamento:hover{
+    transition: 0.3s;
+    border: 2px solid var(--cor3);
+    color: var(--cor3);
+    background-color: var(--cor2);
+}
+#servico:hover{
+    transition: 0.3s;
+    border: 1px solid var(--cor3);
+    color: var(--cor3);
+    background-color: var(--cor1);
+}
+.promocoes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height:600px;
+    background-color: var(--cor1);
+    color: var(--cor2);
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+.cards{
+    width: 80%;
+    height: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.cards .promo_card{
+    font-family: var(--font3);
+    font-size: 20px;
+    text-align: center;
+}
+.promo_card img{
+    width: 100%;
+    filter: grayscale(100%);
+}
+.promo_card p{
+    text-align: center;
+    font-size: 15px
+}
+.promo_card:hover img{
+    opacity: 0.7;
+}
+.promo_card:hover span{
+    color: var(--cor3);
+}
+.vendas{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: var(--font3);
+    font-weight: lighter
+}
+.vendas div{
+    width: 80%;
+}
+.vendas h2{
+    text-align: left;
+    font-family: var(--font2);
+    font-size: 40px;
+}
+.servico_vendido{
+    height: 80%;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    border: 1px solid var(--cor1);
+}
+.imagem_modelo{
+    background-image: url(https://cdn.pixabay.com/photo/2016/06/11/12/13/pink-hair-1450045_640.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: grayscale(100%);
+}
+.imagem_modelo:hover{
+    filter: sepia(100%);
+}
+.imagem_modelo img{
+    height: 100%;
+}
+.texto_produto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.comentarios{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 800px;
+}
+.card_comentarios{
+    height: 70%;
+    width: 26.5%;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    border: 1px solid #fff;
+    overflow: hidden;
+}
+.cometarios_pessoas{
+    display: flex;
+    align-items: center;
+    width: 300%;
+    height: 100%;
+    animation: deslizar 20s infinite ease-in-out
+}
+.pessoa{
+    height: 100%;
+    width: 800px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.texto_pessoa{
+    width: 70%;
+}
+.texto_pessoa p{
+    font-size: 22px;
+    font-family: var(--font2);
+}
+.texto_pessoa h3{
+    font-family: var(--font2);
+}
+@keyframes deslizar {
+    0%, 30% { transform: translateX(0); } /* Fica no primeiro depoimento */
+    33%, 63% { transform: translateX(-33.3%); } /* Fica no segundo depoimento */
+    66%, 96% { transform: translateX(-66.6%); } /* Fica no terceiro depoimento */
+    100% { transform: translateX(0); } /* Volta ao primeiro */
+}
+
+/*  Pausa a animação ao passar o mouse */
+.card_comentarios:hover .comentarios_pessoas {
+    animation-play-state: paused;
+}
+.fotos{
+    text-align: center;
+    height: 800px;
+    color: var(--cor3);
+    overflow: hidden;
+}
+.fotos h2{
+    color: var(--cor1);
+    font-family: var(--font2);
+    font-size: 30px;
+}
+.fotos_galeria{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    overflow: hidden;
+}
+.fotos_galeria .imagem{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+.imagem p{
+    display: none;
+    filter: grayscale(0%);
+    font-weight: bold;
+}
+.imagem:hover p{
+    display: flex;
+}
+footer{
+    text-align: center;
+    background-color: var(--cor1);
+    color: var(--cor2);
+    height: auto;
+}
+footer p{
+    padding: 40px;
+}
+footer p a{
+    text-decoration: none;
+}
+footer:hover a{
+    color: var(--cor3);
+}
